@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+}
+h1 {
+    margin-top: 15px;
+    font-size: 50px;
+}
+h1, h3 {
+    margin-left: 20px;
+    color: rgb(252, 143, 159);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+
+}
+.header {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+div img  {
+    width: 380px;
+    height: 280px;
+    margin-top: 100px;
+}
+ul {
+    display: flex;
+}
+nav a {
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+
+}
+nav a:after {
+    content: "";
+    position: absolute;
+    background-color:  lightpink;
+    height: 27px;
+    margin-bottom: 20px;
+    width: 0;
+    left: 0;
+    bottom: -20px;
+    font-weight: bold;
+    transition: .5s;
+
+}
+nav a:hover:after{
+    width: 100%;
+    transition: 0.5s;
+    background: rgba(245, 186, 220, 0.4);
+    font-weight: bold;
+}
+main section article img {
+    margin: 10px;
+    width: 220px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border: 3px solid salmon;
+}
+main section article img:hover {
+    transition: .5s;
+    border: 3px solid rgb(253, 3, 3);
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+
+}
+main section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer {  
+    margin-top: 100px; 
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;  
+}
+footer div img {
+    margin: .4rem;
+    height: 2rem;
+    width: 2.1rem;
+}
+footer div img:hover {
+    transform: rotatey(360deg);
+    transition: 1s;
+    
+}
+
+@media (max-width: 600px) {
+    body {
+        box-sizing: border-box;
+        font-size: 10px;
+    }
+    ul {
+        font-size: 5px;
+    }
+
+    main section article img {
+        width: 100px;
+        height: 100px;
+    }
+    .logo {
+        margin-top: 50px;
+    }
+    h1 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 8px;
+    }
+}

@@ -118,4 +118,7 @@ footer div img:hover {
     h3 {
         font-size: 8px;
     }
+    main section article a legend {
+        font-size: 6px;
+    }
 }

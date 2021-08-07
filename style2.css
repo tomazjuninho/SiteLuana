@@ -21,3 +21,18 @@ h2 {
     right: 120px;
     top: 200px;
 }
+@media (max-width: 600px) {
+    main {
+        display: block;
+    }
+    h2  {
+        position: relative;
+        margin-bottom: 300px;
+        margin-left: 200px;
+    }    
+    .blusav {
+        width: 320px;
+        height: 380px;
+    }
+    
+}

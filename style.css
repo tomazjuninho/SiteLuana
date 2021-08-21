@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    font-family: sans-serif;
-    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
 }
 .logo {
    display: flex;
@@ -11,6 +12,7 @@ body {
     cursor: pointer;
 }
 .mobile-menu div {
+    display: none;
     width: 32px;
     height: 2px;
     background: #fff;
@@ -23,11 +25,15 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgba(245, 168, 248, 0.4);
+    overflow: hidden;
 
 }
  h1 {
+    position: absolute;
+    top: 20px;
+    left: 70px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    color: lightcoral;
+    color: rgb(223, 15, 15);
     
 }
 div a img {
@@ -91,6 +97,9 @@ footer div img:hover {
 }
 
 @media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
     #nav ul {
         position: absolute;
         top: 8vh;
@@ -107,9 +116,7 @@ footer div img:hover {
         margin-left: 0;
         opacity: 0;
     }
-    .mobile-menu {
-        display: block;
-    }
+    
     #nav.active {
         transform: translateX(0);
     }

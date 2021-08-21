@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     font-family: sans-serif; 
     overflow-x: hidden;
-    background: rgb(250, 240, 249);
+    background: rgb(253, 205, 248);
 }
 .logo {
    top: -5px;
@@ -69,10 +69,12 @@ main section {
     flex-wrap: wrap;
 }
 .footer {  
-    margin-top: 100px; 
-    margin: 0 15px;
+    margin-top: 10px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;  
+    background: rgba(236, 127, 227);
+    
 }
 footer div img {
     align-items: center;

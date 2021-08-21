@@ -4,17 +4,15 @@ body {
     box-sizing: border-box;
     font-family: sans-serif; 
     overflow-x: hidden;
+    background: rgb(250, 240, 249);
 }
 .logo {
    top: -5px;
-   position: absolute;
    display: flex;
    align-items: center; 
 }
 .header {
     display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
     height: 70px;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +26,9 @@ body {
     left: 80px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     color: rgb(223, 15, 15);
+}
+#btn-mobile {
+    display: none;
 }
 div a img {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -89,5 +90,37 @@ footer div img:hover {
 }
 
 @media (max-width: 600px) {
+    #menu {
+       display: block;
+       position: absolute;
+       width: 100%;
+       top: 54px;
+       right: 0px;
+       height: 0px;
+       background: rgb(241, 206, 248);
+       z-index: 1000;
+       transition: .6s;  
+       visibility: hidden; 
+       overflow-y: hidden;
+       
+    }
+    #nav.active #menu {
+        height: calc(100vh - 54px);
+        visibility: visible;
+    }
+    #menu li {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+    }
 
 }

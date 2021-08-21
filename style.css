@@ -3,41 +3,33 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif; 
+    overflow-x: hidden;
 }
 .logo {
+   top: -5px;
+   position: absolute;
    display: flex;
    align-items: center; 
 }
-.mobile-menu {
-    cursor: pointer;
-}
-.mobile-menu div {
-    display: none;
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-
-}
 .header {
     display: flex;
-    height: 90px;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 70px;
     justify-content: space-between;
     align-items: center;
-    background: rgba(245, 168, 248, 0.4);
-    overflow: hidden;
-
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(240, 61, 225, 0.2);
 }
  h1 {
+    letter-spacing: -3px;
     position: absolute;
-    top: 20px;
-    left: 70px;
+    top: 10px;
+    left: 80px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     color: rgb(223, 15, 15);
-    
 }
 div a img {
-
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 ul {
@@ -54,12 +46,12 @@ nav a:hover {
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 main section article img {
+    flex-wrap: wrap;
     margin: 10px;
     width: 220px;
     height: 350px;
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    
 }
 main section article img:hover {
     transition: .5s;
@@ -97,27 +89,5 @@ footer div img:hover {
 }
 
 @media (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
-    #nav ul {
-        position: absolute;
-        top: 8vh;
-        right: 0;  
-        width: 50vw;
-        height: 100vh;
-        background: rgb(255, 221, 253);
-        flex-direction: column;
-        align-items: center; 
-        justify-content: space-around;
-        transform: translateX(100%);
-    }
-    #nav li {
-        margin-left: 0;
-        opacity: 0;
-    }
-    
-    #nav.active {
-        transform: translateX(0);
-    }
+
 }

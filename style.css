@@ -59,7 +59,7 @@ main section article img:hover {
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
 
 }
-main section article a legend {
+legend {
     text-align: center;
     font-size: 13px;
 }

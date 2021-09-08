@@ -73,7 +73,8 @@ main section {
     padding: 10px;
     display: flex;
     justify-content: space-between;  
-    background: rgba(236, 127, 227);
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px;
     
 }
 footer div img {
